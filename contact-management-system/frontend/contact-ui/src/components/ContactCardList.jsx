@@ -14,7 +14,11 @@ const ContactCardList = ({ contacts, onEdit, onDelete }) => {
   return (
     <Stack spacing={1.5}>
       {contacts.map((contact) => (
+<<<<<<< HEAD
         <Card key={contact.id} variant="outlined" sx={{ borderRadius: 0 }}>
+=======
+        <Card key={contact.id} variant="outlined" sx={{ borderRadius: 2 }}>
+>>>>>>> 14cdaac30026e5a1de02c60386f83a415250116c
           <CardContent sx={{ pb: 1.5 }}>
             <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
               <Box>

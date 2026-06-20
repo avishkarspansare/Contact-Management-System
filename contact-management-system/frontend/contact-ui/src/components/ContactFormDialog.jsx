@@ -95,6 +95,7 @@ const ContactFormDialog = ({ open, onClose, onSubmit, initialData, submitError }
       </DialogTitle>
 
       <DialogContent>
+<<<<<<< HEAD
         <form
           autoComplete="off"
           onSubmit={(e) => {
@@ -173,6 +174,66 @@ const ContactFormDialog = ({ open, onClose, onSubmit, initialData, submitError }
             )}
           </Stack>
         </form>
+=======
+        <Stack spacing={2.5} sx={{ mt: 1 }}>
+          <TextField
+            label="Full name"
+            value={form.name}
+            onChange={handleChange("name")}
+            error={Boolean(errors.name)}
+            helperText={errors.name}
+            fullWidth
+            autoFocus
+          />
+
+          <TextField
+            label="Phone number"
+            value={form.phoneNumber}
+            onChange={handleChange("phoneNumber")}
+            error={Boolean(errors.phoneNumber)}
+            helperText={errors.phoneNumber || "Digits only, e.g. 9876543210"}
+            fullWidth
+          />
+
+          <TextField
+            label="Email (optional)"
+            value={form.email}
+            onChange={handleChange("email")}
+            error={Boolean(errors.email)}
+            helperText={errors.email}
+            fullWidth
+          />
+
+          <TextField
+            label="Address (optional)"
+            value={form.address}
+            onChange={handleChange("address")}
+            fullWidth
+            multiline
+            minRows={2}
+          />
+
+          <TextField
+            select
+            label="Category"
+            value={form.category}
+            onChange={handleChange("category")}
+            fullWidth
+          >
+            {CATEGORY_OPTIONS.map((cat) => (
+              <MenuItem key={cat} value={cat}>
+                {cat}
+              </MenuItem>
+            ))}
+          </TextField>
+
+          {submitError && (
+            <Typography variant="body2" color="error">
+              {submitError}
+            </Typography>
+          )}
+        </Stack>
+>>>>>>> 14cdaac30026e5a1de02c60386f83a415250116c
       </DialogContent>
 
       <DialogActions sx={{ px: 3, pb: 2.5 }}>

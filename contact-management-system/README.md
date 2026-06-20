@@ -221,6 +221,7 @@ This project uses MUI v9, which removed the old "system props" shorthand (`<Stac
 - `TextField`'s `InputProps={{ startAdornment: ... }}` is now `slotProps={{ input: { startAdornment: ... } }}`.
 
 If you add new MUI components and see this warning again, check the prop against the [MUI v9 upgrade guide](https://mui.com/material-ui/migration/upgrade-to-v9/) — most "prop not recognized" warnings on MUI components trace back to one of these two changes.
+<<<<<<< HEAD
 
 **Seeing Chrome's autofill dropdown ("Avishkar Sunil Pansare, you@gmail.com") pop up over the "Add contact" form, or your typed text landing in the wrong field (e.g. the header search box instead of the dialog)?**
 
@@ -231,3 +232,5 @@ Fixed in `ContactFormDialog.jsx` by:
 - Giving every field a browser-meaningless `name`/`id` (`cms-field-a1`, `a2`, ...) instead of names like `email` or `address` that trigger Chrome's heuristics regardless of the `autocomplete` attribute.
 
 If this resurfaces on a new field you add, give it the same treatment: an opaque `name`/`id` plus `autoComplete="off"`, not just `autoComplete="off"` alone.
+=======
+>>>>>>> 14cdaac30026e5a1de02c60386f83a415250116c

@@ -51,13 +51,21 @@ const theme = createTheme({
     button: { fontWeight: 600, textTransform: "none" },
   },
   shape: {
+<<<<<<< HEAD
     borderRadius: 0,
+=======
+    borderRadius: 10,
+>>>>>>> 14cdaac30026e5a1de02c60386f83a415250116c
   },
   components: {
     MuiButton: {
       styleOverrides: {
         root: {
+<<<<<<< HEAD
           borderRadius: 0,
+=======
+          borderRadius: 8,
+>>>>>>> 14cdaac30026e5a1de02c60386f83a415250116c
           paddingInline: 18,
         },
       },
