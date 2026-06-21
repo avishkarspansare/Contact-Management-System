@@ -33,11 +33,7 @@ const AppHeader = ({ searchTerm, onSearchChange, totalContacts }) => {
           sx={{
             minWidth: { xs: "100%", sm: 320 },
             backgroundColor: "rgba(255,255,255,0.08)",
-<<<<<<< HEAD
             borderRadius: 0,
-=======
-            borderRadius: 1,
->>>>>>> 14cdaac30026e5a1de02c60386f83a415250116c
             "& .MuiOutlinedInput-root": {
               color: "white",
               "& fieldset": { borderColor: "rgba(255,255,255,0.2)" },
@@ -63,10 +59,7 @@ const AppHeader = ({ searchTerm, onSearchChange, totalContacts }) => {
             backgroundColor: "rgba(199,123,94,0.18)",
             color: "primary.light",
             fontWeight: 700,
-<<<<<<< HEAD
           
-=======
->>>>>>> 14cdaac30026e5a1de02c60386f83a415250116c
           }}
         />
       </Toolbar>

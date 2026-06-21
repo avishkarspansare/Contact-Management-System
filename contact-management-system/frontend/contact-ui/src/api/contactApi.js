@@ -2,13 +2,9 @@ import axios from "axios";
 
 // Base URL for the Spring Boot backend. Adjust if your backend runs
 // on a different port or host.
-<<<<<<< HEAD
-const API_BASE_URL = 
-  "http://localhost:8080/api/contacts";
+const API_BASE_URL =
+ "http://localhost:8080/api/contacts";
   // process.env.REACT_APP_API_BASE_URL;
-=======
-const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || "http://localhost:8080/api/contacts";
->>>>>>> 14cdaac30026e5a1de02c60386f83a415250116c
 
 const apiClient = axios.create({
   baseURL: API_BASE_URL,

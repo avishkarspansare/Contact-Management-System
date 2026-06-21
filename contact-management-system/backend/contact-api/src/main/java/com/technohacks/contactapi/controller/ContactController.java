@@ -17,18 +17,16 @@ import java.util.Map;
  *
  * Base path: /api/contacts
  *
- *   GET    /api/contacts            -> list all contacts
- *   GET    /api/contacts/{id}       -> get one contact
- *   POST   /api/contacts            -> create a contact
- *   PUT    /api/contacts/{id}       -> update a contact
- *   DELETE /api/contacts/{id}       -> delete a contact
- *   GET    /api/contacts/search?term=   -> search by name/phone/email
- *   GET    /api/contacts/category/{category} -> filter by category
+ * GET /api/contacts -> list all contacts GET /api/contacts/{id} -> get one
+ * contact POST /api/contacts -> create a contact PUT /api/contacts/{id} ->
+ * update a contact DELETE /api/contacts/{id} -> delete a contact GET
+ * /api/contacts/search?term= -> search by name/phone/email GET
+ * /api/contacts/category/{category} -> filter by category
  */
 @RestController
 @RequestMapping("/api/contacts")
 @RequiredArgsConstructor
-@CrossOrigin(origins = {"http://localhost:3000", "http://localhost:5173"})
+@CrossOrigin(origins = {"http://localhost:5173"})
 public class ContactController {
 
     private final ContactService contactService;

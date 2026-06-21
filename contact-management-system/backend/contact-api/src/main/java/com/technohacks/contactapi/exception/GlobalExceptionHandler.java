@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
 import org.springframework.web.servlet.NoHandlerFoundException;
-
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -20,6 +19,7 @@ import java.util.List;
  * always receives the same ApiError shape regardless of failure type.
  */
 @RestControllerAdvice
+
 public class GlobalExceptionHandler {
 
     @ExceptionHandler(ResourceNotFoundException.class)
@@ -43,7 +43,7 @@ public class GlobalExceptionHandler {
                 .message(ex.getMessage())
                 .path(request.getRequestURI())
                 .build();
-        return ResponseEntity.status(HttpStatus.CONFLICT).body(error);
+        return ResponseEntity.status(HttpStatus.CONFLICT).body(error); 
     }
 
     @ExceptionHandler(MethodArgumentNotValidException.class)

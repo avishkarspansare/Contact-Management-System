@@ -17,10 +17,7 @@ const CategoryFilterBar = ({ activeCategory, onCategoryChange }) => {
           backgroundColor: activeCategory === "All" ? "secondary.main" : "transparent",
           color: activeCategory === "All" ? "white" : "text.secondary",
           borderColor: "secondary.main",
-<<<<<<< HEAD
           borderRadius: 0,
-=======
->>>>>>> 14cdaac30026e5a1de02c60386f83a415250116c
         }}
       />
       {CATEGORY_OPTIONS.map((cat) => {
@@ -36,10 +33,7 @@ const CategoryFilterBar = ({ activeCategory, onCategoryChange }) => {
               backgroundColor: isActive ? color : "transparent",
               color: isActive ? "white" : color,
               borderColor: color,
-<<<<<<< HEAD
               borderRadius: 0,
-=======
->>>>>>> 14cdaac30026e5a1de02c60386f83a415250116c
             }}
           />
         );

@@ -27,11 +27,7 @@ const ContactTable = ({ contacts, onEdit, onDelete }) => {
   }
 
   return (
-<<<<<<< HEAD
     <TableContainer component={Paper} variant="outlined" sx={{ borderRadius: 0 }}>
-=======
-    <TableContainer component={Paper} variant="outlined" sx={{ borderRadius: 2 }}>
->>>>>>> 14cdaac30026e5a1de02c60386f83a415250116c
       <Table>
         <TableHead>
           <TableRow sx={{ backgroundColor: "rgba(26,35,50,0.03)" }}>

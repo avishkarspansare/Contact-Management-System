@@ -1,0 +1,16 @@
+com\technohacks\contactapi\exception\DuplicateContactException.class
+com\technohacks\contactapi\model\Contact.class
+com\technohacks\contactapi\service\ContactService.class
+com\technohacks\contactapi\repository\ContactRepository.class
+com\technohacks\contactapi\dto\ContactResponse.class
+com\technohacks\contactapi\dto\ApiError$ApiErrorBuilder.class
+com\technohacks\contactapi\model\Contact$ContactBuilder.class
+com\technohacks\contactapi\config\WebConfig.class
+com\technohacks\contactapi\dto\ApiError.class
+com\technohacks\contactapi\service\ContactServiceImpl.class
+com\technohacks\contactapi\dto\ContactRequest.class
+com\technohacks\contactapi\exception\ResourceNotFoundException.class
+com\technohacks\contactapi\controller\ContactController.class
+com\technohacks\contactapi\dto\ContactResponse$ContactResponseBuilder.class
+com\technohacks\contactapi\exception\GlobalExceptionHandler.class
+com\technohacks\contactapi\ContactApiApplication.class
